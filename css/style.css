@@ -33,8 +33,13 @@ img {
 }
 
 /* MENU-NAV */
+header {
+  position: fixed;
+  width: 100%;
+}
+
 .superinfo-bg {
-  background: #9ac9ac;
+  background: #33a074;
 }
 
 .superinfo {
@@ -54,7 +59,7 @@ img {
 }
 
 .bg-nav {
-  background: #d2eef7;
+  background: #56cc9d;
 }
 
 .container-nav {
@@ -71,7 +76,7 @@ img {
 }
 
 .logo-nav h1 {
-  color: #252525;
+  color: white;
 }
 
 .menu-nav ul {
@@ -82,7 +87,7 @@ img {
 .menu-nav ul li a {
   padding-left: 60px;
   font-family: "IBM plex mono", monospace;
-  color: #252525;
+  color: white;
   /* font-weight: bold; */
   font-size: 1.125em;
 }
@@ -95,7 +100,7 @@ img {
 .intro {
   background: url(../img/bg-intro.png) no-repeat center center;
   max-width: 100%;
-  height: 471px;
+  height: 537px;
 }
 
 .intro h1 {
@@ -122,6 +127,7 @@ img {
 .sobre-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .titulo {
@@ -146,7 +152,7 @@ img {
 
 /* SERVICOS */
 .container-servicos {
-  background: #a5ccda;
+  background: #56cc9d;
 }
 
 .title-img {
@@ -177,7 +183,7 @@ img {
   font-family: "IBM plex mono", monospace;
   text-transform: uppercase;
   font-weight: bold;
-  color: #5baf7b;
+  color: #56cc9d;
   text-align: center;
   margin: 40px;
   font-size: 2em;
@@ -231,7 +237,7 @@ img {
 .faq-list dt {
   font-weight: bold;
   font-size: 1.25em;
-  color: #5baf7b;
+  color: #56cc9d;
   font-family: "IBM plex mono", monospace;
 }
 
@@ -247,7 +253,6 @@ img {
 
 .faq-list dd {
   margin: 10px 0 30px 20px;
-  font-weight: bold;
 }
 
 .imagens {
@@ -269,7 +274,7 @@ img {
 
 /* CONTATO */
 .contato-bg {
-  background-color: #d2eef7;
+  background-color: #56cc9d;
 }
 
 .contato-container {
@@ -279,25 +284,28 @@ img {
 }
 
 .info-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 40px 80px;
 }
 
 .title-contato {
   font-family: "IBM plex mono", monospace;
-  color: #5baf7b;
+  color: white;
 }
 
-.info-contato span {
-  font-weight: bold;
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  min-width: 300px;
+  box-shadow: 0 0 .5 #252525;
 }
 
-.divisao::after {
-  content: "";
-  display: block;
-  border: 1px solid #a3d3b5;
-  width: 260px;
-  margin-top: 40px;
-}
 
 /* IMG MOTIVACAo */
 .motivacao {
@@ -305,4 +313,28 @@ img {
   height: 376px;
   background: url(../img/motivacao.png) no-repeat center;
   background-size: cover;
+}
+
+/* FOOTER */
+.bg-footer {
+  background: #56cc9d;
+  padding: 20px;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.container-footer ul li {
+  list-style: disc;
+  margin: 20px 20px;
+}
+
+.social-face {
+  padding-top: 20px;
 }
