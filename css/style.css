@@ -60,6 +60,7 @@ header {
 
 .bg-nav {
   background: #56cc9d;
+
 }
 
 .container-nav {
@@ -99,8 +100,10 @@ header {
 /* INTRO */
 .intro {
   background: url(../img/bg-intro.png) no-repeat center center;
-  max-width: 100%;
+  background-size: cover;
   height: 537px;
+
+  max-width: 100%
 }
 
 .intro h1 {
@@ -274,7 +277,7 @@ header {
 
 /* CONTATO */
 .contato-bg {
-  background-color: #56cc9d;
+  background-color: #f0f4f4;
 }
 
 .contato-container {
@@ -293,7 +296,7 @@ header {
 
 .title-contato {
   font-family: "IBM plex mono", monospace;
-  color: white;
+  color: #33a074;
 }
 
 
@@ -330,11 +333,41 @@ header {
 
 }
 
+.container-footer h1::before {
+
+  content: "";
+  display: block;
+  border: 4px solid #252525;
+  width: 20px;
+  margin-bottom: 10px;
+
+}
+
 .container-footer ul li {
   list-style: disc;
   margin: 20px 20px;
+  color: white;
+  font-weight: bold;
 }
 
-.social-face {
+
+.flex-rs {
+  display: flex;
   padding-top: 20px;
+  justify-content: space-around;
+}
+
+.copy {
+  background: #44a880;
+}
+
+.copy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.copy-container p {
+  color: black;
+  font-weight: bold;
 }
